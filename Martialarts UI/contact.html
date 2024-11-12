@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Martial Arts Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/SchoolLogo.png" alt="Kung Fu Club Logo">
+    </a>
+  </div>
+
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="videos.html">Videos</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="locations.html">Locations</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="events.html">Events</a>
+    </div>
+
+    <div class="right-buttons">
+      <a href="sign-up1.html"><button class="sign-up-btn">Sign-up</button></a>
+      <a href="login.html"><button class="login-btn">Login</button></a>
+    </div>
+  </nav>
+</header>
+
+
+<section class="contact-section">
+  <div class="signup-box">
+    <h2>Contact Us</h2>
+    
+    <form action="contact-action.html" method="POST" class="contact-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required> <!-- Changed to date type -->
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required> <!-- Changed to email type -->
+
+      <label for="contact-number">Contact Number:</label>
+      <input type="tel" id="contact-number" name="contact-number" placeholder="Enter your phone number" required> <!-- Changed to tel type -->
+
+      <label for="location">Choose Location:</label>
+      <select id="location" name="location" required>
+        <option value="" disabled selected>Select a location</option>
+        <option value="London">Location1</option>
+        <option value="Liverpool">Location2</option>
+      </select>
+
+      <label for="age-group">Choose Age Group:</label> <!-- Changed id and name to use hyphen -->
+      <select id="age-group" name="age-group" required> <!-- Changed to hyphenated name -->
+        <option value="" disabled selected>Select an age group</option>
+        <option value="Pandas">4-6 years / Pandas</option>
+        <option value="Tigers">7-9 years / Tigers</option>
+        <option value="Dragons">10-12 years / Dragons</option>
+        <option value="Adults">13 + / Adults</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+
+      <p>Looking for more info? <a href="faq.html">Check our FAQ</a></p>
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <p>&copy; 2024 Kung Fu Club</p>
+  <a href="#">Facebook</a> |
+  <a href="#">Instagram</a>
+</footer>
+
+</body>
+</html>
